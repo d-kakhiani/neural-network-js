@@ -34,6 +34,14 @@ export default class Run {
   }
 
   /**
+   * Set trained data for network.
+   * @param data
+   */
+  setTrained(data) {
+    this.trainData = data;
+  }
+
+  /**
    * Next generation based on current generation.
    * This would be called after scoring each network in generation. Once all networks are scored, this method will be called to get next generation.
    * @returns {Network[]}
